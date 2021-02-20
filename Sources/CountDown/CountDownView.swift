@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct CountDownView: View {
+public struct CountDownView: View {
   
   let remainingSeconds: TimeInterval
   let totalSeconds: TimeInterval
@@ -21,7 +21,7 @@ struct CountDownView: View {
     self.totalSeconds = totalSeconds
   }
   
-  var body: some View {
+  public var body: some View {
     GeometryReader { geometry in
       let minWidthHeight = min(geometry.size.width,
                                geometry.size.height)
